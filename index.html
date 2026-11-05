@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-ed="orl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anatomy GS Power · Dra. Gleide Sá · Barcelona 2027</title>
-<meta name="description" content="Curso internacional presencial Anatomy GS Power com a Dra. Gleide Sá. Hands-on Fresh Frozen Specimen, 21 e 22 de setembro de 2027, Barcelona – Espanha. Certificação internacional American Anatomy.">
+<title>Anatomy GS Power · Dra. Gleide Sá · Orlando e Barcelona 2027</title>
+<meta name="description" content="Curso internacional presencial Anatomy GS Power com a Dra. Gleide Sá. Hands-on Fresh Frozen Specimen em duas edições: Orlando – EUA, 29 e 30 de abril de 2027, e Barcelona – Espanha, 21 e 22 de setembro de 2027. Certificação internacional American Anatomy.">
 <meta property="og:title" content="Anatomy GS Power · Dra. Gleide Sá">
-<meta property="og:description" content="Hands-on Fresh Frozen Specimen · 21 e 22 de setembro de 2027 · Barcelona – Espanha">
+<meta property="og:description" content="Hands-on Fresh Frozen Specimen · Orlando: 29 e 30 de abril de 2027 · Barcelona: 21 e 22 de setembro de 2027">
 <meta property="og:image" content="img/1.jpg">
 <meta name="theme-color" content="#0e0c0a">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -345,17 +345,43 @@ body.done .idcard{opacity:1;transform:none}
  .hero .wrap{padding:0 0 70px;margin-top:-60px;position:relative;z-index:2}
  .idcard{margin:0 20px 50px}
 }
+/* edicoes */
+html[data-ed="orl"] [data-only="bcn"],html[data-ed="bcn"] [data-only="orl"]{display:none!important}
+[data-only]{animation:edFade .6s var(--ease)}
+@keyframes edFade{from{opacity:0}}
+.bcn-word[data-only]{animation:tick 40s linear infinite}
+.edpick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:640px;margin:2rem 0 2.2rem}
+.edc{display:grid;gap:7px;text-align:left;padding:16px 18px;color:var(--ivory);font-family:var(--sans);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:14px;backdrop-filter:blur(8px);cursor:pointer;transition:border-color .35s,background .35s,transform .35s var(--ease)}
+.edc:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.35)}
+.edc[aria-pressed="true"]{border-color:var(--gold);background:rgba(229,50,45,.14);box-shadow:inset 0 0 0 1px var(--gold)}
+.edc-k{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);font-weight:600}
+.edc-c,.edc-d{display:flex;align-items:center;gap:8px}
+.edc-c{font-family:var(--serif);font-weight:600;font-size:1.3rem;letter-spacing:.03em;text-transform:uppercase;line-height:1.1}
+.edc-d{font-size:.84rem;color:var(--sand)}
+.edc svg{width:16px;height:16px;flex:none;stroke:var(--gold2);fill:none;stroke-width:1.8}
+.edsw{display:inline-flex;gap:3px;padding:3px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(14,12,10,.5)}
+.edsw button{padding:.55em 1.1em;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--sand);background:none;border:0;border-radius:999px;cursor:pointer;transition:background .3s,color .3s}
+.edsw button:hover{color:#fff}
+.edsw button[aria-pressed="true"]{background:var(--gold);color:#fff}
+.edc:focus-visible,.edsw button:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
+.edsw-in{display:flex;width:max-content;margin:28px 0 0}
+.invest .edsw-in{margin:28px auto 0}
+.plano-mod{margin-top:20px;font-family:var(--serif);font-weight:600;font-size:1.5rem;color:#d42a25}
+@media (max-width:520px){.edpick{grid-template-columns:1fr}.bar .edsw button{padding:.5em .8em;font-size:.64rem}}
+@media (prefers-reduced-motion:reduce){[data-only]{animation:none}}
+@media (min-width:901px){.hero .wrap{padding:118px 0 56px}.hero-logo{width:min(380px,30vw)}.hero h1{margin:.2em 0 .35em!important}.gs{font-size:1.25rem}.edpick{margin:1.3rem 0 1.5rem}.sub-chips{margin:-.6rem 0 1.4rem}}
 </style>
 </head>
 <body>
 <div id="pre" aria-hidden="true"><div class="pn t"></div><div class="pn b"></div><div class="c"><img src="img/logo-anatomy.png" alt=""><div class="num" id="pnum" hidden>000</div></div></div>
 <div class="glow" id="glow"></div>
 
-<div class="ticker" aria-hidden="true"><div><span>Esta oferta especial termina em poucas horas!</span><span>✦</span><span>Barcelona – Espanha · 21 e 22 de setembro de 2027</span><span>✦</span><span>Esta oferta especial termina em poucas horas!</span><span>✦</span><span>Barcelona – Espanha · 21 e 22 de setembro de 2027</span><span>✦</span></div></div>
+<div class="ticker" aria-hidden="true"><div><span>Esta oferta especial termina em poucas horas!</span><span>✦</span><span>Orlando – EUA · 29 e 30 de abril de 2027</span><span>✦</span><span>Barcelona – Espanha · 21 e 22 de setembro de 2027</span><span>✦</span><span>Esta oferta especial termina em poucas horas!</span><span>✦</span><span>Orlando – EUA · 29 e 30 de abril de 2027</span><span>✦</span><span>Barcelona – Espanha · 21 e 22 de setembro de 2027</span><span>✦</span></div></div>
 
 <header class="bar" id="bar" style="top:31px">
  <div class="wrap">
   <a href="#" class="logo"><img src="img/logo-anatomy.png" alt="Anatomy" style="height:44px;width:auto;display:block"></a>
+  <div class="edsw" role="group" aria-label="Escolher edição"><button type="button" data-ed-btn="orl">Orlando</button><button type="button" data-ed-btn="bcn">Barcelona</button></div>
   <a class="btn" href="#investimento">Garanta sua vaga</a>
  </div>
 </header>
@@ -368,7 +394,10 @@ body.done .idcard{opacity:1;transform:none}
   <div class="flags" role="img" aria-label="Estados Unidos, Brasil e Espanha"><svg viewBox="0 0 38 24"><rect width="38" height="24" fill="#b22234"/><g fill="#fff"><rect y="1.85" width="38" height="1.85"/><rect y="5.54" width="38" height="1.85"/><rect y="9.23" width="38" height="1.85"/><rect y="12.92" width="38" height="1.85"/><rect y="16.62" width="38" height="1.85"/><rect y="20.31" width="38" height="1.85"/></g><rect width="16" height="13" fill="#3c3b6e"/><g fill="#fff"><circle cx="2" cy="2" r=".55"/><circle cx="2" cy="5" r=".55"/><circle cx="2" cy="8" r=".55"/><circle cx="2" cy="11" r=".55"/><circle cx="5" cy="2" r=".55"/><circle cx="5" cy="5" r=".55"/><circle cx="5" cy="8" r=".55"/><circle cx="5" cy="11" r=".55"/><circle cx="8" cy="2" r=".55"/><circle cx="8" cy="5" r=".55"/><circle cx="8" cy="8" r=".55"/><circle cx="8" cy="11" r=".55"/><circle cx="11" cy="2" r=".55"/><circle cx="11" cy="5" r=".55"/><circle cx="11" cy="8" r=".55"/><circle cx="11" cy="11" r=".55"/><circle cx="14" cy="2" r=".55"/><circle cx="14" cy="5" r=".55"/><circle cx="14" cy="8" r=".55"/><circle cx="14" cy="11" r=".55"/></g></svg><svg viewBox="0 0 38 24"><rect width="38" height="24" fill="#009c3b"/><path d="M19 3 35 12 19 21 3 12z" fill="#ffdf00"/><circle cx="19" cy="12" r="5.2" fill="#002776"/><path d="M14 11.2c3-.8 7-.4 10 1.4" stroke="#fff" stroke-width=".8" fill="none"/></svg><svg viewBox="0 0 38 24"><rect width="38" height="24" fill="#c60b1e"/><rect y="6" width="38" height="12" fill="#ffc400"/><rect x="8" y="9" width="4" height="6" rx="1" fill="#c60b1e" opacity=".8"/></svg></div>
   <h1 style="margin:.5em 0 .6em"><img class="hero-logo split-in" src="img/logo-anatomy.png" alt="Anatomy GS Power"><span class="gs">Método GS Power</span></h1>
   <p class="lead rv in">Treinamento teórico e prático, com <b>hands-on Fresh Frozen Specimen,</b> em ambiente de laboratório, com certificação internacional.</p>
-  <div class="chips rv d1"><div class="chip"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> 21 e 22 de setembro de 2027</div><div class="chip"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> Barcelona – Espanha</div></div>
+  <div class="edpick rv d1" role="group" aria-label="Escolha a edição do curso">
+   <button type="button" class="edc" data-ed-btn="orl"><span class="edc-k">Edição EUA</span><span class="edc-c"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> Orlando – EUA</span><span class="edc-d"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> 29 e 30 de abril de 2027</span></button>
+   <button type="button" class="edc" data-ed-btn="bcn"><span class="edc-k">Edição Espanha</span><span class="edc-c"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> Barcelona – Espanha</span><span class="edc-d"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> 21 e 22 de setembro de 2027</span></button>
+  </div>
   <div class="sub-chips rv d1"><span>Teoria + prática em laboratório</span><span>Certificação internacional</span></div>
   <div class="cta-row rv d2">
    <a class="btn wa" href="#">Garanta sua vaga</a>
@@ -380,8 +409,31 @@ body.done .idcard{opacity:1;transform:none}
 </section>
 
 <div class="bcn" aria-hidden="true">
- <div class="bcn-word"><span>BARCELONA · ESPANHA · BARCELONA · ESPANHA · BARCELONA · ESPANHA · </span><span>BARCELONA · ESPANHA · BARCELONA · ESPANHA · BARCELONA · ESPANHA · </span></div>
- <svg class="skyline" viewBox="0 0 1200 230" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+ <div class="bcn-word" data-only="orl"><span>ORLANDO · EUA · ORLANDO · EUA · ORLANDO · EUA · </span><span>ORLANDO · EUA · ORLANDO · EUA · ORLANDO · EUA · </span></div><div class="bcn-word" data-only="bcn"><span>BARCELONA · ESPANHA · BARCELONA · ESPANHA · BARCELONA · ESPANHA · </span><span>BARCELONA · ESPANHA · BARCELONA · ESPANHA · BARCELONA · ESPANHA · </span></div>
+ <svg class="skyline" data-only="orl" viewBox="0 0 1200 230" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+  <path class="dr" d="M0 222H1200"/>
+  <!-- palmeiras -->
+  <path class="dr" d="M60 222c6-40 8-70 6-104M66 118c-16-14-34-12-44 2M66 118c-10-20-26-26-40-20M66 118c6-18 22-26 38-18M66 118c16-10 32-6 42 8"/>
+  <path class="dr" d="M130 222c4-30 6-50 4-78M134 144c-12-10-26-8-34 2M134 144c-6-14-18-20-28-14M134 144c6-14 16-20 28-12M134 144c12-8 24-4 32 6"/>
+  <!-- centro -->
+  <path class="dr" d="M190 222V130h44v92M198 146h8M216 146h8M198 168h8M216 168h8M198 190h8M216 190h8"/>
+  <path class="dr" d="M244 222V82l26-22 26 22v140M256 100h28M256 124h28M256 148h28M256 172h28M256 196h28M270 60V40"/>
+  <path class="dr" d="M306 222V110h50v112M316 126v84M336 126v84M306 150h50M306 186h50"/>
+  <path class="dr" d="M366 222V64c26-12 50-12 72 0v158M380 84h44M380 108h44M380 132h44M380 156h44M380 180h44"/>
+  <path class="dr" d="M448 222V136h38v86M456 152h8M472 152h8M456 176h8M472 176h8"/>
+  <!-- fonte do Lago Eola -->
+  <path class="dr r" d="M510 222c30-14 90-14 120 0M530 206h80l-14-26h-52zM552 180l6-26h24l6 26M570 154v-22M570 132c-14-16-28-12-34 4M570 132c14-16 28-12 34 4M570 132c-4-18-2-30 0-38 2 8 4 20 0 38"/>
+  <!-- roda-gigante -->
+  <circle class="dr r" cx="770" cy="110" r="96"/>
+  <circle class="dr r" cx="770" cy="110" r="10"/>
+  <path class="dr r" d="M770 14V206M674 110H866M702 42 838 178M838 42 702 178M734 222l36-112 36 112"/>
+  <!-- edificios baixos e palmeira -->
+  <path class="dr" d="M900 222v-58h46v58M908 178h10M928 178h10M908 198h10M928 198h10M956 222v-36h34v36"/>
+  <path class="dr" d="M1040 222c6-40 8-70 6-104M1046 118c-16-14-34-12-44 2M1046 118c-10-20-26-26-40-20M1046 118c6-18 22-26 38-18M1046 118c16-10 32-6 42 8"/>
+  <path class="dr" d="M1110 222v-30c20-16 50-16 70 0v30M1110 192h70"/>
+  <circle class="dr" cx="1150" cy="60" r="20"/>
+ </svg>
+ <svg class="skyline" data-only="bcn" viewBox="0 0 1200 230" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
   <path class="dr" d="M0 222H1200"/>
   <!-- Arc de Triomf -->
   <path class="dr" d="M20 222V120h70v102M20 120v-10h70v10M38 222v-55a17 17 0 0 1 34 0v55M26 140h58"/>
@@ -422,7 +474,7 @@ body.done .idcard{opacity:1;transform:none}
   <span class="eyebrow rv">Curso de Anatomia do Movimento em Fresh frozen cadaver</span>
   <h2 class="hq-t"><span class="w">“Hands</span> <span class="w o">On</span> <span class="w">Fresh</span> <span class="w r">Frozen</span> <span class="w o">Specimen”</span></h2>
   <div class="hq-meta rv">
-   <span><b>21 e 22</b> de setembro de 2027</span><i></i><span><b>Barcelona</b> – Espanha</span><i></i><span><b>Hands-on</b> em laboratório</span>
+   <span data-only="orl"><b>29 e 30</b> de abril de 2027</span><span data-only="bcn"><b>21 e 22</b> de setembro de 2027</span><i></i><span data-only="orl"><b>Orlando</b> – EUA</span><span data-only="bcn"><b>Barcelona</b> – Espanha</span><i></i><span><b>Hands-on</b> em laboratório</span>
   </div>
  </div>
 </div>
@@ -490,7 +542,15 @@ body.done .idcard{opacity:1;transform:none}
  <div class="wrap">
   <span class="eyebrow rv">Pacote completo</span>
   <h2 class="rv d1" style="margin-top:.4em">O que está incluído<br><em>no pacote completo?</em></h2>
-  <div class="inc-list">
+  <div class="inc-list" data-only="orl">
+   <div class="inc rv"><span class="n">01</span><h3>Material de estudo</h3><p>Conteúdo teórico necessário para realizar procedimentos anatômicos. Inclui apostilas e todo o conteúdo do programa.</p></div>
+   <div class="inc rv"><span class="n">02</span><h3>Experiência VIP</h3><p>Conforto e comodidade. O que importa é aproveitar ao máximo essa incrível experiência internacional.</p></div>
+   <div class="inc rv"><span class="n">03</span><h3>Almoço</h3><p>Você pode desfrutar de um almoço em Lunch Box no laboratório.</p></div>
+   <div class="inc rv"><span class="n">04</span><h3>Certificação Internacional</h3><p>Você participa do curso teórico e prático, com técnicas desenvolvidas em cadáveres frescos (“Hands On”). Ao final, você recebe um certificado internacional de participação.</p></div>
+   <div class="inc rv"><span class="n">05</span><h3>Material de posicionamento internacional</h3><p>Conteúdo estratégico desenvolvido para fortalecer a presença e a credibilidade da marca em nível global.</p></div>
+   <div class="inc rv"><span class="n">06</span><h3>Welcome drink Anatomy Network</h3><p>Um momento especial de boas-vindas, em que os participantes da Anatomy Network se encontram em um ambiente descontraído para começar a experiência com networking e acolhimento.</p></div>
+  </div>
+  <div class="inc-list" data-only="bcn">
    <div class="inc rv"><span class="n">01</span><h3>Material de estudo digital</h3><p>Conteúdo teórico necessário para realizar procedimentos anatômicos. Inclui apostilas e todo o conteúdo do programa.</p></div>
    <div class="inc rv"><span class="n">02</span><h3>Experiência VIP</h3><p>Conforto e comodidade. O que importa é aproveitar ao máximo essa incrível experiência internacional.</p></div>
    <div class="inc rv"><span class="n">03</span><h3>Certificação Internacional</h3><p>Você participa do curso teórico e prático, com técnicas desenvolvidas em cadáveres frescos (“Hands On”). Ao final, você recebe uma certificação vinculada ao órgão americano.</p></div>
@@ -527,6 +587,7 @@ body.done .idcard{opacity:1;transform:none}
  <div class="wrap">
   <span class="eyebrow rv">Conteúdo</span>
   <h2 class="rv d1" style="margin-top:.4em">Plano <em>de aula</em></h2>
+  <p class="plano-mod rv" data-only="orl">Módulo: Da anatomia aos resultados: precisão na harmonização</p>
   <ol>
    <li class="rv">Revisão anatômica detalhada da região glútea e áreas adjacentes.</li>
    <li class="rv">Visualização prática da anatomia real, com preservação da textura e mobilidade dos tecidos.</li>
@@ -546,7 +607,26 @@ body.done .idcard{opacity:1;transform:none}
  <div class="wrap">
   <span class="eyebrow rv">Confira a linha do tempo do evento.</span>
   <h2 class="rv d1" style="margin-top:.4em">Cronograma <em>— 2027</em></h2>
-  <div class="days">
+  <div class="edsw edsw-in rv" role="group" aria-label="Escolher edição"><button type="button" data-ed-btn="orl">Orlando</button><button type="button" data-ed-btn="bcn">Barcelona</button></div>
+  <div class="days" data-only="orl">
+   <article class="day rv">
+    <div class="ph"><img src="img/3.jpg" alt="Aulas teóricas" loading="lazy" style="object-position:center 25%"></div>
+    <div class="in">
+     <span class="tag">Turma iniciante</span>
+     <div class="date">29 de abril de 2027</div>
+     <ul class="tl"><li><b>08:00</b>Credenciamento</li><li><b>08:30</b>Início das aulas teóricas</li><li><b>12:00</b>Intervalo para almoço</li><li><b>13:00</b>Início do segundo período de aulas</li><li><b>18:00</b>Encerramento das aulas teóricas, noite livre</li></ul>
+    </div>
+   </article>
+   <article class="day rv d1">
+    <div class="ph"><img src="img/10.jpg" alt="Aulas práticas em laboratório" loading="lazy" style="object-position:center 40%"></div>
+    <div class="in">
+     <span class="tag">Aulas práticas – American Anatomy Institute</span>
+     <div class="date">30 de abril de 2027</div>
+     <ul class="tl"><li><b>08:30</b>Início das aulas práticas (laboratório)</li><li><b>12:00</b>Intervalo para almoço – Lunch Box</li><li><b>13:00</b>Segundo período de aulas práticas (laboratório)</li><li><b>16:00</b>Encerramento das aulas</li><li><b>16:30</b>Entrega da certificação internacional</li><li><b>17:00</b>Encerramento do curso</li><li><b>20:00</b>Brinde e networking</li></ul>
+    </div>
+   </article>
+  </div>
+  <div class="days" data-only="bcn">
    <article class="day rv">
     <div class="ph"><img src="img/3.jpg" alt="Aulas teóricas" loading="lazy" style="object-position:center 25%"></div>
     <div class="in">
@@ -571,18 +651,20 @@ body.done .idcard{opacity:1;transform:none}
  <div class="wrap" style="position:relative">
   <span class="eyebrow rv">Investimento</span>
   <h2 class="rv d1" style="margin-top:.4em">Método <em>de pagamento</em></h2>
+  <div class="edsw edsw-in rv" role="group" aria-label="Escolher edição"><button type="button" data-ed-btn="orl">Orlando</button><button type="button" data-ed-btn="bcn">Barcelona</button></div>
   <div class="tcard rv d2">
-   <div class="ribbon">Barcelona</div>
+   <div class="ribbon"><span data-only="orl">Orlando</span><span data-only="bcn">Barcelona</span></div>
    <div class="top"><span class="stars">★★★★★</span><span class="badge">Lote</span></div>
    <h3>Curso<br>Anatomy GS Power</h3>
-   <p class="desc">21 e 22 de setembro de 2027 · Barcelona – Espanha</p>
+   <p class="desc"><span data-only="orl">29 e 30 de abril de 2027 · Orlando – EUA</span><span data-only="bcn">21 e 22 de setembro de 2027 · Barcelona – Espanha</span></p>
    <div class="pbox">
     <small>Investimento</small>
-    <div class="pv"><sup>U$</sup>5.900</div>
-    <p>Pagamento parcelado via boleto bancário, sem usar seu cartão de crédito.</p>
+    <div class="pv"><sup>U$</sup>4.800</div>
+    <p>Pagamento parcelado via boleto bancário, sem usar seu cartão de crédito<span data-only="orl"> e sem afetar seu limite.</span><span data-only="bcn">.</span></p>
     <a class="btn wa" href="#">Inscrever-se</a>
    </div>
-   <ul class="inc-chk"><li>Material de estudo digital</li><li>Experiência VIP</li><li>Certificação Internacional</li><li>Material de posicionamento internacional</li><li>Jantar e networking</li></ul>
+   <ul class="inc-chk" data-only="orl"><li>Material de estudo</li><li>Experiência VIP</li><li>Almoço</li><li>Certificação Internacional</li><li>Material de posicionamento internacional</li><li>Welcome drink Anatomy Network</li></ul>
+   <ul class="inc-chk" data-only="bcn"><li>Material de estudo digital</li><li>Experiência VIP</li><li>Certificação Internacional</li><li>Material de posicionamento internacional</li><li>Jantar e networking</li></ul>
   </div>
  </div>
 </section>
@@ -594,7 +676,7 @@ body.done .idcard{opacity:1;transform:none}
  </div>
  <div class="wrap faq-list">
   <details class="rv"><summary>Posso pagar em prestações?<i></i></summary><div class="ans">Sim, oferecemos uma condição especial: parcelamento sem juros via boleto bancário. (Entre em contato com o especialista pelo WhatsApp) Pagamentos recorrentes no seu cartão de crédito sem afetar seu limite. Oferecemos até 12 parcelas no seu cartão de crédito. Para pagamentos à vista, temos uma condição especial. (Entre em contato com o especialista pelo WhatsApp)</div></details>
-  <details class="rv"><summary>Terei apoio?<i></i></summary><div class="ans">Todo o suporte será fornecido pela equipe.</div></details>
+  <details class="rv"><summary>Terei apoio?<i></i></summary><div class="ans">Todo o suporte será fornecido pela equipe<span data-only="orl"> em solo americano.</span><span data-only="bcn">.</span></div></details>
   <details class="rv"><summary>O curso é em português?<i></i></summary><div class="ans">Todas as aulas são ministradas em português para melhor compreensão e assimilação do conteúdo do curso.</div></details>
   <details class="rv"><summary>Certificação<i></i></summary><div class="ans">Nossa certificação internacional aprimorará seu conhecimento e agregará valor significativo à sua profissão. No entanto, nossa certificação não o autoriza a realizar procedimentos, pois somente conselhos profissionais estão autorizados a fazê-lo.</div></details>
  </div>
@@ -610,9 +692,9 @@ body.done .idcard{opacity:1;transform:none}
 
 <section class="final">
  <div class="wrap">
-  <span class="eyebrow rv">Barcelona · 21 e 22 de setembro de 2027</span>
+  <span class="eyebrow rv"><span data-only="orl">Orlando · 29 e 30 de abril de 2027</span><span data-only="bcn">Barcelona · 21 e 22 de setembro de 2027</span></span>
   <h2 class="rv d1">Sua vaga em <em>nível internacional.</em></h2>
-  <div class="cta-row rv d2" style="justify-content:center"><a class="btn" href="https://wa.me/17543998757?text=Ol%C3%A1!%20Tenho%20interesse%20no%20curso%20internacional%20mencionado%20pela%20Dra.%20Gleide%20S%C3%A1.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%2C%20por%20favor." target="_blank" rel="noopener">Garanta sua vaga</a><a class="btn ghost wa" href="#">Grupo VIP</a></div>
+  <div class="cta-row rv d2" style="justify-content:center"><a class="btn wa wa-final" href="#">Garanta sua vaga</a><a class="btn ghost wa" href="#">Grupo VIP</a></div>
  </div>
 </section>
 </main>
@@ -627,8 +709,18 @@ body.done .idcard{opacity:1;transform:none}
 
 
 <script>
-const WA="https://wa.me/19546957457?text="+encodeURIComponent("Olá! Tenho interesse no curso internacional mencionado pela Dra. Gleide Sá. Gostaria de mais informações, por favor.");
-document.querySelectorAll('a.wa').forEach(a=>{a.href=WA;a.target="_blank";a.rel="noopener"});
+const EDS={orl:{nome:"Orlando",slug:"orlando",titulo:"Orlando 2027"},bcn:{nome:"Barcelona",slug:"barcelona",titulo:"Barcelona 2027"}};
+function setEd(ed,manual){
+ const E=EDS[ed];document.documentElement.dataset.ed=ed;
+ const msg=encodeURIComponent("Olá! Tenho interesse no curso internacional de "+E.nome+" mencionado pela Dra. Gleide Sá. Gostaria de mais informações, por favor.");
+ document.querySelectorAll('a.wa').forEach(a=>{const n=(ed==='bcn'&&a.classList.contains('wa-final'))?'17543998757':'19546957457';a.href="https://wa.me/"+n+"?text="+msg;a.target="_blank";a.rel="noopener"});
+ document.querySelectorAll('[data-ed-btn]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.edBtn===ed));
+ document.title="Anatomy GS Power · Dra. Gleide Sá · "+E.titulo;
+ if(manual){try{const u=new URL(location.href);u.searchParams.set('edicao',E.slug);history.replaceState(null,'',u)}catch(e){}
+  const c=document.querySelector('.bcn');if(c){c.classList.remove('in');requestAnimationFrame(()=>requestAnimationFrame(()=>c.classList.add('in')))}}
+}
+document.querySelectorAll('[data-ed-btn]').forEach(b=>b.addEventListener('click',()=>setEd(b.dataset.edBtn,true)));
+setEd(new URLSearchParams(location.search).get('edicao')==='barcelona'?'bcn':'orl');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15,rootMargin:"0px 0px -40px"});
 document.querySelectorAll('.rv,.rv-img,.bcn').forEach(el=>io.observe(el));
 const bar=document.getElementById('bar');
